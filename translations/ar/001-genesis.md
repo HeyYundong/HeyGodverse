@@ -1,6 +1,6 @@
 <!--
 Arabic draft translation — drafted by Claude, awaiting the author's review.
-Must stay aligned paragraph-by-paragraph with 神话/001-创世纪.md (same sections, same number
+Must stay aligned paragraph-by-paragraph with myths/001-genesis.md (same sections, same number
 of paragraphs / list items in each): the reader keeps your place across languages by paragraph index.
 Only in-world text is translated; 【幕后】, 画面 and 金句 never reach the reader.
 

@@ -1,5 +1,5 @@
 #!/usr/bin/env node
-// 把 神话/*.md 和 译本/<语言>/*.md 编进 index.html 里的阅读器数据（<script id="book-data">）。
+// 把 myths/*.md 和 translations/<语言>/*.md 编进 index.html 里的阅读器数据（<script id="book-data">）。
 // 用法：node tools/build.mjs
 //
 // - 只收世界内的文字：题记、正文各节、异文。【幕后】、画面、金句只给作者看，不进阅读器。
@@ -10,7 +10,7 @@ import { join, dirname } from 'node:path';
 import { fileURLToPath } from 'node:url';
 
 const ROOT = join(dirname(fileURLToPath(import.meta.url)), '..');
-const SOURCES = { zh: '神话', en: '译本/en', ar: '译本/ar' };
+const SOURCES = { zh: 'myths', en: 'translations/en', ar: 'translations/ar' };
 const AUTHOR_ONLY = /^(【幕后】|幕后|画面|金句)$/;
 const QUOTE_ONLY = /^[“"«「][^“”"«»「」]{1,22}[”"»」]$/u;
 
